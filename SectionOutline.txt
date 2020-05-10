@@ -1,0 +1,202 @@
+JAVASCRIPT TYPES
+-----------------
+1. Number - Any number inputs, Such as 5 x 5, 5 + 5, 5 % 5 - % = gives the remainder of the input (how many timees the first goes into it)
+2. String - "hello" "hello" + " world" anything in quotations is a string '' can be used, but have to be carefull ie don\'t to tell it to ignore the quote
+3. Boolean - true or false 
+4. Undefined - means the variable hasnt been defined, effectivley meaning it doesnt exist yet as nothing has been assigned to the variable
+5. Null - Means there is nothing there and nothing can be placed there 
+<!-- 6. Symbol (new in ECMAScript 6) -->
+7. Object - Are collections of properties, ie - User information, name, age, married, hobby
+
+10 + "34" - will print 1034, as you cant add a sting to a number, but 10 - "7" - will print 3, as you cant minus a string, so it will try help you out and print the mathmatical answer.
+NaN - Not a number
+
+
+JAVASCRIPT COMPARISONS
+-----------------
+
+!== - Doesnt equel the same value - 4 !== 5 True - 3 !== 3 False
+=== - Equals the same value 
+>= - Greater than or equel to the value
+<= - Smaller than or equel to the value
+> - Greater than the first value 
+< - Smaller than the first value 
+
+JAVASCRIPT VARIABLES
+-----------------
+var - Is basically the memory, IE var george = "These pretzles are making me hungry" +"!"; when george is inputed, it will print the string
+	rules:
+		Needs to start with a letter, Never a number - can end with numbers
+		Cant start with a symbol '&'
+		Can start with - $ or _
+<!-- let (new in ECMAScript 6)-->  
+<!-- const (new in ECMAScript 6)-->
+
+Camel case - when the second words first letter is capital ie - firstName
+prompt()  - is basically asking the user for an input ie prompt("What is your username?") - and when its inputted, that will be the result 
+	It automatically changes everything into a string, as it expects words, But if a number is needed - Number(first) it will output the first variable as a number value.
+	Then you can add these 2 inputs into a seperate variable, var sum = Number(first) + Number(second);
+	Which will output the answer of the 2 inputs, - Basic calculator 
+
+CALCULATER CODE:
+
+	var first = prompt("First Number");
+	var second = prompt("Second Number");
+	var sum = Number(first) + Number(second);
+	alert(sum);
+
+alert() - Will print out the variable stated next to it - not asking for an input, like prompt() 
+	strings can also be added inside of the brackets, making sure to use the "" and the + to output all data 
+
+When writing javascript it is always reccomened to put ';' at the end of every Expression - which is any line of code. only in rare cases will not using the semi-colon break your program if you forget, but just incase, always use it
+
+JAVASCRIPT CONDITIONALS
+-----------------
+if - essentially comparing its inputs - if (name === "Billy") { alert("Hi Billy");}
+else - Is saying when the 'if' element is false, use this instead 
+else if - allows multiple inputs for outputting one thing - example below 
+<!-- ternary operator -->
+<!-- switch -->
+
+Control flow is how the program flows, Normally it will flow in one long continues line! unless it has 'else' statements and has to use them because it didnt get the desired input.
+
+This one will print out Hi Billy, as the varible is true
+	
+	var name = "Billy";
+	if (name ==="Billy") {
+	    alert("Hi Billy"); 
+	} else {
+	     alert("I dont know you!");   
+	}
+
+This one, the varible 'name' has been changed, so it will use else and print 'I dont know you!'
+	
+	undefined
+	name = "Kyle"
+	"Kyle"
+
+	if (name ==="Billy") {
+	    alert("Hi Billy");
+	} else {
+	     alert("I dont know you!");   
+	}
+
+Above is called and 'IF ELSE STATEMENT'
+
+Depending on the variable information, it will print out either statement 
+
+	if (name ==="Billy") {
+	    alert("Hi Billy");
+	} else if (name === "Kyle") {
+	     alert("Hi Kyle!");   
+	} else {
+	    alert("I dont know you!");
+	} 
+
+JAVASCRIPT LOGICAL OPERATORS
+-----------------
+&& - Thie means 'AND' - allows you to check 2 different variables - Example below 
+|| - This means 'OR' - example below
+! - This means 'OPPOSITE' - Example below
+
+AND Example
+	
+	if (name === "Bob" && name === "Smith") {
+	 	alert("Hi Bob Smith");
+	}
+
+	This statement will print out the alert, if the first and last name variables are not what it expects - The same can be applied to 'OR'
+
+		if (firstName === "Kyle" && lastName === "Chart") {
+		alert("Hello Kyle Chart"); 
+	    } else {
+	        alert("Who are you?");
+		}
+
+OR Example
+	
+	if (firstName === "Billy" || lastName === "Ann") {
+	alert(Hello Billy Or Ann);
+	}
+
+OPPOSITE Example
+
+	!true - false
+	!false - true
+
+	if (!(name === "Bob")) {
+		alert("Hi Bob");
+	}
+
+the above example will not print the alert, if the 'name' is 'Bob' if it is 'Bob' then it will print the alert 
+
+JAVASCRIPT FUNCTIONS
+-----------------
+var a = function name() {} - Function Expression
+function name() {} - function decleration
+return - Returns the final desired information, to wherever is specified, and also ends the function. 
+<!-- () => (new in ECMAScript 6) -->
+
+These are what perform the actions, Either a single action or multiple actions
+() - Means calling the function, to execute it 
+Arguments - Are what is given to the functions to execute inside the brackets ("Hello There") ; - Also able to have multiple arguments inside seperated by a comma. Dependent on the type of function.
+When creating functions, you also need to call them, otherwise they wont be executed, and you wont get the desired outcome!!!!
+
+JAVASCRIPT DATA STRUCTURES
+-----------------
+Array - Is essentially a list, that holds different information - As a way to organise different information. Arrays can be used to store any information, such as - Strings, Functions, Numbers, Booleans - Each array can hold multiple things, so you dont need 1 array for numbers and strings, they can all be stored together - BUT THIS IS NOT ADVISED, AS IT CAN BE A PERFORMANCE ISSUE. 
+Object
+
+JAVASCRIPT LOOPING
+-----------------
+for - Keeps looping through the code, a set number of times that has been specified in the block of code
+while - keeps running through the block of code, until the set statmenet is true 
+do 
+forEach (new in ECMAScript 5) - allows you to call a function once for each element in an array, in order.
+
+
+
+JAVASCRIPT KEYWORDS
+-----------------
+
+NEVER USE THESE WORDS FOR NAMING THINGS, THEY ALREADY HAVE SET USES AND CANT BE USED ELSEWHERE!
+
+break
+case
+catch
+class
+const
+continue
+debugger
+default 
+delete
+do
+else - says, if another element returns false, use this element after me 
+export
+extends
+finally
+for
+function - These perform the actions defined by itself - are also variables
+if - compares its inputes to other information
+import
+in
+instanceof
+new
+return - For the function to show the output, 'return' is needed, as this is the secondary step JS takes along its path. Singular use, instantly ends the function, in certain cases. It can appear more than once, example in the java file.
+super
+switch
+this
+throw
+try
+typeof
+var - is a variable which holds certain information, such as numbers or strings 
+void
+while
+with
+yield
+
+-----------------
+
+console.log - prints what ever is specified to the console
+index - Means the numbers in an array, ie - if cat is in position 0 - its index is 0 - In arrays 
+method - is a function inside of an object
